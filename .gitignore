@@ -1,0 +1,29 @@
+# Build output
+build/
+*.3dsx
+*.elf
+*.smdh
+*.cia
+*.bnr
+*.map
+
+# Runtime artefacts pulled back off the SD card
+logs/
+shots/
+
+# Shareware game data is committed under gamedata/ - see the licence note in
+# the README. Everything else of that shape is still build/runtime spill.
+*.CON
+*.con
+*.DMO
+*.dmo
+*.cfg
+
+# Generated from gamedata/DUKE3D.GRP by tools/make_assets.py
+banner.bnr
+
+# Rebuilt by tools/patch_sdl.py from the vendored SDL submodule. The patched
+# libSDL.a is a build artefact, not source - the patch itself lives in the
+# script.
+vendor/sdl12-3ds/build/
+vendor/sdl12-3ds/lib/

@@ -1,0 +1,14 @@
+[submodule "vendor/dukenukem3d"]
+	path = vendor/dukenukem3d
+	url = https://github.com/videogamepreservation/dukenukem3d.git
+[submodule "vendor/chocolate_duke3D"]
+	path = vendor/chocolate_duke3D
+	url = https://github.com/fabiensanglard/chocolate_duke3D.git
+[submodule "vendor/sdl12-3ds"]
+	path = vendor/sdl12-3ds
+	url = https://github.com/devkitPro/SDL.git
+	branch = 3ds-sdl-1.2
+	# tools/patch_sdl.py builds into build/ and lib/ inside this checkout. The
+	# parent .gitignore cannot reach inside a submodule, so without this every
+	# `git status` reports the build tree as untracked content.
+	ignore = untracked
